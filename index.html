@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <!-- Css Link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Boxicons Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <!-- ------------------- Start Side Navbar ------------------------------ -->
+    <nav class="sidebar">
+        <div class="logo_menu">
+            <h2 class="logo">Ananth</h2>
+            <i class='bx bx-menu'></i>
+        </div>
+        <ul class="list">
+            <li class="list_item active">
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name" style="--i:1">Dashboard</span>
+                </a>
+            </li>
+            <li class="list_item">
+                <a href="#">
+                    <i class='bx bx-user'></i>
+                    <span class="link_name" style="--i:2">User</span>
+                </a>
+            </li>
+            <li class="list_item">
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span class="link_name" style="--i:3">Messages</span>
+                </a>
+            </li>
+            <li class="list_item">
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="link_name" style="--i:4">Analytics</span>
+                </a>
+            </li>
+            <li class="list_item">
+                <a href="#">
+                    <i class='bx bx-folder'></i>
+                    <span class="link_name" style="--i:5">File manager</span>
+                </a>
+            </li>
+            <li class="list_item">
+                <a href="#">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="link_name" style="--i:6">Order</span>
+                </a>
+            </li>
+            <li class="list_item">
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="link_name" style="--i:7">Settings</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+    <!-- -------------------------- End Side Navbar ------------------------ -->
+    <div class="container">
+        <div class="calculator">
+            <input type="display" placeholder="" id="display" readonly>
+            <button type="button" onclick="ClearDisplay()" >Cl</button>
+            <button type="button" onclick="del()" >DEL</button>
+            <button type="button" onclick="appendToDisplay('%')" >%</button>
+            <button type="button" onclick="appendToDisplay('/')" >/</button>
+            <button type="button" onclick="appendToDisplay('7')" >7</button>
+            <button type="button" onclick="appendToDisplay('8')" >8</button>
+            <button type="button" onclick="appendToDisplay('9')" >9</button>
+            <button type="button" onclick="appendToDisplay('*')" >*</button>
+            <button type="button" onclick="appendToDisplay('4')" >4</button>
+            <button type="button" onclick="appendToDisplay('5')" >5</button>
+            <button type="button" onclick="appendToDisplay('6')" >6</button>
+            <button type="button" onclick="appendToDisplay('-')" >-</button>  
+            <button type="button" onclick="appendToDisplay('1')" >1</button>
+            <button type="button" onclick="appendToDisplay('2')" >2</button>
+            <button type="button" onclick="appendToDisplay('3')" >3</button>
+            <button type="button" onclick="appendToDisplay('+')" >+</button>
+            <button type="button" onclick="appendToDisplay('.')" >.</button>
+            <button type="button" onclick="appendToDisplay('0')" >0</button>
+            <button type="button" onclick="Calculate()" class="equal">=</button>
+        </div>
+    </div>
+
+    <!-- -------------------------- Start Calculator ------------------------ -->
+
+
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
